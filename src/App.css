@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.headline {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.subheadline {
+  text-align: center;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+.news-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-form label {
+  font-weight: 600;
+}
+
+.news-form input[type="number"] {
+  width: 120px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.news-form button {
+  padding: 0.5rem 1.4rem;
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.news-form button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.news-form button:not(:disabled):hover {
+  background: #0058c4;
+}
+
+/* Error */
+.error {
+  color: #c00;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Accuracy card */
+.accuracy-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.accuracy-label {
+  font-weight: 700;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.accuracy-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Table */
+.news-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.news-table th {
+  background: #0070f3;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.news-table td {
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.news-table tr:last-child td {
+  border-bottom: none;
+}
+
+.row-correct td {
+  background: #f0fdf4;
+}
+
+.row-wrong td {
+  background: #fff5f5;
+}
